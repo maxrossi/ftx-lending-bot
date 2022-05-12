@@ -34,14 +34,14 @@ jobs:
           FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
         run: python main.py -a "Margin Lending" -c "UST"
       
-      - name: Renew margin lending amount USDT
-        env:
-          FTX_API: ${{ secrets.FTX_API }}
-          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
-        run: python main.py -a "Margin Lending" -c "USDT"
+     # - name: Renew margin lending amount USDT
+     #  env:
+     #     FTX_API: ${{ secrets.FTX_API }}
+     #     FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+     #   run: python main.py -a "Margin Lending" -c "USDT"
         
-      - name: Renew margin lending amount USD
-        env:
-          FTX_API: ${{ secrets.FTX_API }}
-          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
-        run: python main.py -a "Margin Lending" -c "USD"
+     # - name: Renew margin lending amount USD
+     #   env:
+     #     FTX_API: ${{ secrets.FTX_API }}
+     #     FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+     #   run: python main.py -a "Margin Lending" -c "USD"
