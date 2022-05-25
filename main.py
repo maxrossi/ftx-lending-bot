@@ -1,4 +1,4 @@
-import os
+import os, math
 import argparse
 
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
     # renew lending
     body = {
         "coin": coin,
-        "size": balance,
+        "size": math.floor(balance * 100) / 100.0, # round down to two decimals to avoid "Size too large" errors
         "rate": args.rate
     }
     res = client.private_post_spot_margin_offers(body)
