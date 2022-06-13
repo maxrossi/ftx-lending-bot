@@ -34,26 +34,26 @@ jobs:
           FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
         run: python main.py -a "Margin Lending" -c "CEL" -r "0.00000342"
 
-      - name: Renew margin lending amount UST
-        env:
-          FTX_API: ${{ secrets.FTX_API }}
-          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
-        run: python main.py -a "Margin Lending" -c "UST" -r "0.00000342"
-        
-      - name: Renew margin lending amount LUNA
-        env:
-          FTX_API: ${{ secrets.FTX_API }}
-          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
-        run: python main.py -a "Margin Lending" -c "LUNA" -r "0.00000342"
-      
-      - name: Renew margin lending amount USDT
-        env:
-          FTX_API: ${{ secrets.FTX_API }}
-          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
-        run: python main.py -a "Margin Lending" -c "USDT" -r "0.00000342"
-        
-      - name: Renew margin lending amount USD
-        env:
-          FTX_API: ${{ secrets.FTX_API }}
-          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
-        run: python main.py -a "Margin Lending" -c "USD" -r "0.00000342"
+     # - name: Renew margin lending amount UST
+     #   env:
+     #     FTX_API: ${{ secrets.FTX_API }}
+     #     FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+     #   run: python main.py -a "Margin Lending" -c "UST" -r "0.00000342"
+     #   
+     # - name: Renew margin lending amount LUNA
+     #   env:
+     #     FTX_API: ${{ secrets.FTX_API }}
+     #     FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+     #   run: python main.py -a "Margin Lending" -c "LUNA" -r "0.00000342"
+     # 
+     # - name: Renew margin lending amount USDT
+     #   env:
+     #     FTX_API: ${{ secrets.FTX_API }}
+     #     FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+     #   run: python main.py -a "Margin Lending" -c "USDT" -r "0.00000342"
+     #   
+     # - name: Renew margin lending amount USD
+     #   env:
+     #     FTX_API: ${{ secrets.FTX_API }}
+     #     FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+     #   run: python main.py -a "Margin Lending" -c "USD" -r "0.00000342"
