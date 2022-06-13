@@ -27,6 +27,12 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+        
+      - name: Renew margin lending amount CEL
+        env:
+          FTX_API: ${{ secrets.FTX_API }}
+          FTX_API_SECRET: ${{ secrets.FTX_API_SECRET }}
+        run: python main.py -a "Margin Lending" -c "CEL" -r "0.00000342"
 
       - name: Renew margin lending amount UST
         env:
